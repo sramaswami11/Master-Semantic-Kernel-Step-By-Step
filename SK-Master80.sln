@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SK-Master80", "SK-Master80\SK-Master80.csproj", "{120DB731-0021-47A9-8E78-CB4E1B80403A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{B698794C-E9B1-4396-91CB-C5C80A323B4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{120DB731-0021-47A9-8E78-CB4E1B80403A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120DB731-0021-47A9-8E78-CB4E1B80403A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120DB731-0021-47A9-8E78-CB4E1B80403A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120DB731-0021-47A9-8E78-CB4E1B80403A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B698794C-E9B1-4396-91CB-C5C80A323B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B698794C-E9B1-4396-91CB-C5C80A323B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B698794C-E9B1-4396-91CB-C5C80A323B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B698794C-E9B1-4396-91CB-C5C80A323B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A39D4F3F-6988-4CFE-A7BA-FE76A11DD3A8}
+	EndGlobalSection
+EndGlobal

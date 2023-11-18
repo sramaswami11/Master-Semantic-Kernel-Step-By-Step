@@ -1,0 +1,12 @@
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\bin\Debug\net8.0\Common.deps.json
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\bin\Debug\net8.0\Common.dll
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\bin\Debug\net8.0\Common.pdb
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\obj\Debug\net8.0\Common.csproj.AssemblyReference.cache
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\obj\Debug\net8.0\Common.dll
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\obj\Debug\net8.0\refint\Common.dll
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\obj\Debug\net8.0\Common.pdb
+C:\Siva\Projects\SemanticKernel\SK-Master80\Common\obj\Debug\net8.0\ref\Common.dll
