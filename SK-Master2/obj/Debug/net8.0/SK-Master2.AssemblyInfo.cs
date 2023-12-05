@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SK-Master2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+345a1db229b0fe35fbcb4d571e7ad134290dfb56")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2edf36abd05f662ecea4c279562a8fad3e0b5f6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SK-Master2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SK-Master2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
