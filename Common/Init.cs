@@ -1,4 +1,5 @@
-﻿using Microsoft.SemanticKernel;
+﻿using HandlebarsDotNet;
+using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Orchestration;
 
 namespace Common;
@@ -7,7 +8,7 @@ public static class Init
 {
     const string modelId = "gpt-3.5-turbo";
     #region OPENAI_APIKEY
-    const string myApiKey = "{My secret OpenAI key}";
+    const string myApiKey = "{My openai key}";
     #endregion
 
     public static IKernel Setup()
@@ -28,36 +29,51 @@ public static class Init
         return kernel.ImportSemanticFunctionsFromDirectory(pluginsDirectory, pluginTopDir);
     }
 
-    public static async Task<KernelResult> GetIntent(IKernel kernel, 
-        IDictionary<string, ISKFunction> plugin)
+    public static async Task<KernelResult> RunKernelAsync(IKernel kernel,
+        ContextVariables context, IDictionary<string, ISKFunction> plugin,string key)
     {
+        var result = await kernel.RunAsync(context, plugin[key]);
+        return result;
+    }
 
-        var myContext = new ContextVariables();
+    public static async Task<KernelResult> RunKernelAsync(IKernel kernel,
+        string input, IDictionary<string, ISKFunction> plugin, string key)
+    {
+        var result = await kernel.RunAsync(input, plugin[key]);
+        return result;
+    }
+
+//    public static async Task<KernelResult> GetIntent(IKernel kernel, 
+//        IDictionary<string, ISKFunction> plugin)
+//    {
+
+//        var myContext = new ContextVariables();
 
        
-        myContext.Set("INPUT", "These pretzels are making me thirsty!");
+//        myContext.Set("INPUT", "These pretzels are making me thirsty!");
 
-        var result = await kernel.RunAsync(myContext, plugin["GetIntent"]);
-        return result;
-    }
+//        var result = await kernel.RunAsync(myContext, plugin["GetIntent"]);
+//        return result;
+//    }
 
-    public static async Task<KernelResult> GetIntentTemplatized(IKernel kernel, 
-                                            IDictionary<string, ISKFunction> plugin)
-    {
+//    public static async Task<KernelResult> GetIntentTemplatized(IKernel kernel, 
+//                                            IDictionary<string, ISKFunction> plugin)
+//    {
 
-        var variables = new ContextVariables
-        {
-            ["input"] = "Yes",
-            ["history"] = @"Bot: How can I help you?
-User: Admin of our R&D division of my company has sent us an invite for the Annual Holiday party.",
-            ["options"] = "SendEmail, ReadEmail, SendMeeting, RsvpToMeeting, SendChat"
-        };
+//        var variables = new ContextVariables
+//        {
+//            ["input"] = "Yes",
+//            ["history"] = @"Bot: How can I help you?
+//User: Admin of our R&D division of my company has sent us an invite for the Annual Holiday party.",
+//            ["options"] = "SendEmail, ReadEmail, SendMeeting, RsvpToMeeting, SendChat"
+//        };
 
-        var result = await kernel.RunAsync(variables, plugin["GetIntentTemp"]);
-        return result;
-    }
+//        var result = await kernel.RunAsync(variables, plugin["GetIntentTemp"]);
+//        return result;
+//    }
 
 
 
 }
+
 
